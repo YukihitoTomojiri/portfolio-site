@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- 記載番号：2 -->
-    <title>オリアプ（オリジナルアプリ）</title>
+    <title>LifeFunction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -13,7 +13,7 @@
           <h1>
             <a href="../">
               <!-- 記載番号：1 -->
-              <span class="header__logo-title">Tech Taro</span>
+              <span class="header__logo-title">Yukihito Tomojiri</span>
               <span class="header__logo-sub">Portfolio</span>
             </a>
           </h1>
@@ -33,19 +33,19 @@
       <section class="p-work-firstview">
         <div class="section-inner">
           <!-- 記載番号：2（記載番号2は5行目にもあるので気をつけてください） -->
-          <h2>HOBCHA（趣味共有SNS）</h2>
+          <h2>LifeFunction</h2>
           <div class="p-work-firstview__pict obj-fit-img">
             <!-- images/02に配置した、オリジナルアプリの画像（PC版）のパスを記載する -->
-            <img src="../images/work/02/pict-work02-firstview_pc.jpg" class="show-pc">
+            <img src="../images/work/02/pict-work02-firstview_pc.png" class="show-pc">
             <!-- images/02に配置した、オリジナルアプリの画像（SP版）のパスを記載する -->
-            <img src="../images/work/02/pict-work02-firstview_sp.jpg" class="show-sp">
+            <img src="../images/work/02/pict-work02-firstview_sp.png" class="show-sp">
           </div>
           <div class="p-work-firstview__text-area">
             <h3 class="p-work-firstview__text-titile">開発環境</h3>
             <!-- 記載番号：3 -->
-            <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello</p>
+            <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code</p>
             <!-- 記載番号：4 -->
-            <p class="p-work-firstview__text-link"><a href="__URL__" target="_blank">https://github.com/XXXXXX/xxxxxx</a></p>
+            <p class="p-work-firstview__text-link"><a href="__URL__" target="_blank">https://github.com/YukihitoTomojiri/life_function_app</a></p>
           </div>
         </div>
       </section>
@@ -58,12 +58,12 @@
                 <tr>
                   <th>制作時間</th>
                   <!-- 記載番号：5 -->
-                  <td>70時間</td>
+                  <td>90時間</td>
                 </tr>
                 <tr>
                   <th>URL</th>
                   <!-- 記載番号：6 -->
-                  <td><a href="__URL__" target="_blank">http://hoge.heroku.com</a></td>
+                  <td><a href="__URL__" target="_blank">https://life-function-app.herokuapp.com/</a></td>
                 </tr>
                 <tr>
                   <th>ID</th>
@@ -84,12 +84,12 @@
                 <tr>
                   <th>mail</th>
                   <!-- 記載番号：9 -->
-                  <td>test_user@hoge.com</td>
+                  <td>test@test.com</td>
                 </tr>
                 <tr>
                   <th>PASS</th>
                   <!-- 記載番号：10 -->
-                  <td>testuser1234</td>
+                  <td>a00000</td>
                 </tr>
               </table>
             </li>
@@ -105,18 +105,18 @@
             <!-- 記載番号：11 -->
             <div class="p-work-outline__text">
               <p>
-                オリジナルアプリケーションとして、自身の趣味を共有をするSNSを開発しました。
-                <br>
-                主な機能は、ユーザー登録機能、および趣味のジャンルごとのタイムライン機能、タグ付け機能です。
+                LifeFunctionAppは、看護師やその他医療従事者でパソコンを苦手とする方にも使いやすいUIデザインを考えたオリジナルアプリケーションです。<br>
+                Webアプリケーションなのでipadやパソコンで認知機能評価を管理できます。
               </p>
               <p>
-                トップページにアクセスすると、様々な趣味のジャンルについて表示されています。それをクリックすると、そのジャンルにおけるタイムライン機能を閲覧することができます。
+                主な機能は、利用者の登録機能、その利用者の認知機能をアンケートのようなフォームで入力し得点を記録します。
               </p>
               <p>
-                ユーザー登録をすると、それらのタイムラインに自身の投稿をすることができます。画像を添付することや、YouTubeのリンクを埋め込むことができます。YouTubeの動画については、タイムライン上で再生することができます。
-              </p>
-              <p>
-                また、投稿をする際はタグ付け（ハッシュタグ）をすることができ、ハッシュタグをクリックすると同一のハッシュタグを持つ投稿のみを閲覧することができます。
+                個人情報を含むアプリケーションなので、トップページにアクセスする際にはログインを求められます。<br>
+                ユーザー登録するとトップページに遷移し、利用者が一覧表示されます。<br>
+                利用者をクリックすると詳細画面に遷移し、「評価する」ボタンが出現します。<br>
+                「評価する」ボタンをクリックすると検査が実行されます。<br>
+                評価の入力フォームは、点数によって非同期通信で得点欄の表示を変更します。<br>
               </p>
             </div>
           </div>
@@ -130,13 +130,19 @@
               <!-- 記載番号：12 -->
               <div class="p-work-about__item-block">
                 <p>
-                  普段SNSを利用している中で、効率的に情報に接することができていないと課題に感じることがありました。
+                  病院勤務で紙のカルテで管理する際に、評価用紙を探したり、閲覧はその場所に行かなければならなかったり、時間的なコストが掛かっていたため、その時間的なコストを削減するために開発しました。<br>
+                  また以前別の書類作成支援システムを作成した際に、年配の職員から、「パソコンが苦手。触りたくない。」という意見がありました。
+                  これを解決できるシンプルなUIデザインをしてみようと考え開発をしました。
                 </p>
                 <p>
-                  私はサッカー観戦が趣味で、特にイングランドのプレミアリーグの情報をSNSで収集します。しかし、サッカーのジャンルは広く、フォローをしている他のユーザーは他のリーグの情報や、サッカーとは関係のない情報を共有するためそれらの情報がノイズに感じることがありました。またハッシュタグのみでジャンルを管理すると、必ずしも全員がハッシュタグをつけるわけではないので、情報の網羅性に欠けると感じています。
+                  パソコンを苦手とする方の問題点として、英語の記載がある、ボタンの数が多い、文字が小さいと言った問題点がありました。しかし、書類入力速度を高めるように選択はマウスで入力できるようにすると苦手意識が減少した方が何人もおられました。
+                  これは以前Excelで似たような書類作成支援システムを作成した際に、パソコンが苦手な方にシステムを使って頂いて独自に分析をした結果です。
                 </p>
                 <p>
-                  そこで、5ちゃんねるなどの掲示板の仕組みを参考に、テーマがカテゴライズされたSNSを作成したいと考えました。
+                  ただでさえキーボードにはたくさんのボタンが配置され、一部英語表記があります。この時点で、利用者は「失敗したらどうしよう」「壊してしまうのではないか」といったイメージがあるようです。
+                </p>
+                <p>
+                  このアプリケーションは、極力画像ファイルの配置を抑え、ボタンの数を減らしたり、文字の大きさを大きくし、マウスを使ったUI操作にすることで迷うことが少ないシンプルなデザインになるように設計しました。
                 </p>
               </div>
             </li>
@@ -145,18 +151,18 @@
               <div class="p-work-about__item-block p-work-about__item-block-2column">
                 <div class="p-work-about__item-block-pict obj-fit-img">
                   <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
-                  <img src="../images/work/02/pict-work02-about-dammy.jpg">
+                  <img src="../images/work/02/pict-work02.png">
                 </div>
                 <!-- 記載番号：13 -->
                 <div class="p-work-about__item-block-text">
                   <p>
-                    1つ目が本アプリケーションのポイントである趣味ジャンルのカテゴライズ機能です。カテゴリー管理にはancestryというRuby gemを用い、複数改装で管理できるようにしました。また、カテゴリーを各々が作成できる機能を設けました。しかし、これにはある課題が生じ、現在は機能を取り外しています。詳細は後述します。
+                    1つめがパソコンが苦手な方にわかりやすいように、入力はラジオボタンやリスト形式になるようにしました。
                   </p>
                   <p>
-                    2つ目がタイムラインのUIです。スマートフォンブラウザでの利用を考え、「スマホで見やすい」「スマホでタップしやすい」をテーマにマークアップを行い実装しました。
+                    2つめができる限り日本語表記し、日本人がわかりやすくシンプルなUIで直感的に操作にすることを意識しました。
                   </p>
                   <p>
-                    いずれも、知人20名ほどに実際に利用してもらい、ユーザーヒアリングを行いながら改善を行っています。
+                    オンラインスクールで知り合った方に、アプリを利用してもらいユーザーヒアリングをしながら実装しました。
                   </p>
                 </div>
               </div>
@@ -164,22 +170,13 @@
             <li class="p-work-about__item">
               <h3>今後実装したいと思っていること</h3>
               <div class="p-work-about__item-block p-work-about__item-block-2column">
-                <div class="p-work-about__item-block-pict obj-fit-img">
-                  <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
-                  <img src="../images/work/02/pict-work02-about-dammy.jpg">
-                </div>
+
                 <!-- 記載番号：14 -->
                 <div class="p-work-about__item-block-text">
                   <p>
-                    ActiveAdminなどを用いて、管理機能を設けたいと考えています。理由は2つあります。
-                  </p>
-                  <p>
-                    1つ目が、SNSというサービスの特性上、不適切な投稿を削除できるようにしておく必要があるためです。
-                  </p>
-                  <p>
-                    2つ目が、趣味ジャンルの修正追加を容易に行うためです。前述のとおり、ユーザーにカテゴリーを作成する機能を設けていましたが削除をしました。これは、ユーザーが好き勝手にカテゴリーを登録できてしまうと、重複の可能性があるためです。
-                    <br>
-                    そこで、ユーザーに要望フォーム形式で修正追加したいカテゴリーを投稿をしてもらい、運営側で追加する仕組みを考えています。その運用を実現するために管理機能が必要であると考えています。
+                    特に実装したい機能は2つあります。<br>
+                    1つ目が登録された施設ごとにトップページに表示される利用者の情報を制限することです。個人情報を含むため、表示される利用者の制限が必要です。<br>
+                    2つ目が準備物がパソコンもしくはタブレットだけになることです。今は、短期記憶の検査の項目上、検査キットが別途必要です。これはアナログで用意することと変わりません。そこでJavaScriptを使って、検査キットの画像が表示される機能の実装を行い準備物が少なくなるようにしたいと考えています。また野菜の名前を記載し保存する項目で音声保存機能を実装し入力の手間が省けるような実装をしたいと考えています。
                   </p>
                 </div>
               </div>
@@ -197,7 +194,7 @@
               <li class="p-work-others__item">
                 <div class="p-work-others__item-pict">
                   <!-- images/01に配置した、FURIMAの画像（PC版）のパスを記載する -->
-                  <a href="01.html" style="background-image:url('../images/work/01/pict-work01-firstview_pc.jpg');"></a>
+                  <a href="01.html" style="background-image:url('../images/work/01/pict-work01-firstview_pc.png');"></a>
                 </div>
                 <div class="p-work-others__item-text-block">
                   <!-- 記載番号：15 -->
@@ -212,13 +209,13 @@
               <li class="p-work-others__item">
                 <div class="p-work-others__item-pict">
                   <!-- images/02に配置した、オリジナルアプリの画像（PC版）のパスを記載する -->
-                  <a href="02.html" style="background-image:url('../images/work/02/pict-work02-firstview_pc.jpg');"></a>
+                  <a href="02.html" style="background-image:url('../images/work/02/pict-work02-firstview_pc.png');"></a>
                 </div>
                 <div class="p-work-others__item-text-block">
                   <!-- 記載番号：17 -->
-                  <h3>HOBCHA（趣味共有SNS）</h3>
+                  <h3>LifeFunction</h3>
                   <!-- 記載番号：18 -->
-                  <p>Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello</p>
+                  <p>Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code</p>
                 </div>
                 <div class="p-work-others__item-btn-block">
                   <a href="02.html" class="button">More</a>
@@ -230,7 +227,7 @@
       </section>
     </main>
     <!-- 記載番号：1 -->
-    <footer id="footer" class="footer"><p>&copy; Taro Tech.</p></footer>
+    <footer id="footer" class="footer"><p>&copy; Yukihito Tomojiri.</p></footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../js/ofi.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
